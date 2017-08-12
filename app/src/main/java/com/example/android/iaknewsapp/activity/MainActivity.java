@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
         RV_NEWS.setLayoutManager(layoutManager);
         RV_NEWS.setAdapter(adapter);
+
+
     }
 
     private List<ArticlesItem> getDummyData(){
