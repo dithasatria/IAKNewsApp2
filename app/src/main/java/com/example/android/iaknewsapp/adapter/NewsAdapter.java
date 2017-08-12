@@ -46,6 +46,12 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
         return articlesItems.size();
     }
 
+    public void setData(List<ArticlesItem> datas){
+        this.articlesItems.clear();
+        articlesItems.addAll(datas);
+        notifyDataSetChanged();
+    }
+
     static class NewsViewHolder extends RecyclerView.ViewHolder{
 
         @BindView(R.id.imgNewsPhoto) ImageView IMG_NEWS_PHOTO;
